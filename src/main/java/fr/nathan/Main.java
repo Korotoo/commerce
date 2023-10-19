@@ -4,26 +4,21 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        int prime = 250;
-        int salaire = 400;
-        int out;
-        int aot = 10;
     
         Scanner clavier = new Scanner(System.in);
-        System.out.println("Entrez le nombre de vente :");
-        int salairehoraire = clavier.nextInt();
+        System.out.println("Entrez le nombre d'année travaillez :");
+        int année = clavier.nextInt();
+
+        System.out.println("Entrez le nombre d'argent par ans :");
+        int argent = clavier.nextInt();
         clavier.close();
 
-       if (salairehoraire < 10){
-        aot = aot - salairehoraire;
-        System.out.println("Il manque " + aot );
-        System.out.println ("Votre salaire sera de : " + salaire );
+       if (année >= 2 && argent >= 30000){
+        System.out.println("Vous êtes contratable à un prêt");
+       }else{
+        System.out.println("Vous n'avez pas les conditions pour contractez un prêt");
        }
-       if (salairehoraire >= 10){
-        out = prime + salaire;
-        System.out.println("Bravo vous avez réussi a vendre : "+ salairehoraire);
-        System.out.println ("Votre salaire sera de : " + out);
-       }
+
 
     }
 }
