@@ -13,7 +13,7 @@ public class Main {
         int argent = clavier.nextInt();
         clavier.close();
 
-       if (année >= 2 && argent >= 30000){
+       if (année >= 2 && argent > 30000){
         System.out.println("Vous êtes contratable à un prêt");
        }else{
         System.out.println("Vous n'avez pas les conditions pour contractez un prêt");
